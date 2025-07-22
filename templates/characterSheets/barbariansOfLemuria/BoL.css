@@ -14,4 +14,34 @@
     min-height: 1060px;
     max-width: 1500px;
     max-height: 1060px;
+    position: relative;
+}
+#bol-name {
+    font-size: 50px;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 38px;
+    right: 1025px;
+}
+
+#bol-origin {
+    font-size: 30px;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 102px;
+    right: 1025px;
+}
+
+#bol-languages {
+    font-size: 30px;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 150px;
+    right: 1025px;
 }
