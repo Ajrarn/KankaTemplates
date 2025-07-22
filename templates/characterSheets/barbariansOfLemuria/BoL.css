@@ -6,3 +6,12 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.bol-sheet {
+    background-image: url("fond.svg");
+    background-size: contain;
+    min-width: 1500px;
+    min-height: 1060px;
+    max-width: 1500px;
+    max-height: 1060px;
+}
