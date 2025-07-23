@@ -1,60 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 .barbarian {
-    font-size: xx-large;
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+
 .bol-sheet {
-    background-image: url("fond.svg");
-    background-size: contain;
-    min-width: 75vw;
-    min-height: 53vw;
-    max-width: 75vw;
-    max-height: 53vw;
-    /*min-width: 1500px;*/
-    /*min-height: 1060px;*/
-    /*max-width: 1500px;*/
-    /*max-height: 1060px;*/
     position: relative;
+    width: 100%;
+    aspect-ratio: 1500 / 1060;
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/fond.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #bol-name {
-    font-size: 2.5vw;
-    /*font-size: 50px;*/
-    font-family: "IM Fell English SC", serif;
-    font-weight: 400;
-    font-style: normal;
     position: absolute;
-    top: 1.9vw;
-    right: 51.25vw;
-    /*top: 38px;*/
-    /*right: 1025px;*/
+    bottom: 91.69%;   /* (972 / 1060) × 100 */
+    right: 68.33%;       /* (1025 / 1500) * 100 */
+    font-size: 2.17vw; /* ou mieux : via clamp() pour contrôle */
 }
 
 #bol-origin {
-    font-size: 1.5vw;
-    /*font-size: 30px;*/
-    font-family: "IM Fell English SC", serif;
-    font-weight: 400;
-    font-style: normal;
     position: absolute;
-    top: 5.1vw;
-    right: 51.25vw;
-    /*top: 102px;*/
-    /*right: 1025px;*/
+    bottom: 87.55%;   /* (928 / 1060) × 100 */
+    right: 68.33%;       /* (1025 / 1500) * 100 */
+    font-size: 1.3vw; /* ou mieux : via clamp() pour contrôle */
 }
 
 #bol-languages {
-    font-size: 1.5vw;
-    /*font-size: 30px;*/
-    font-family: "IM Fell English SC", serif;
-    font-weight: 400;
-    font-style: normal;
     position: absolute;
-    top: 7.5vw;
-    right: 51.25vw;
-    /*top: 150px;*/
-    /*right: 1025px;*/
+    bottom: 83.02%;   /* (880 / 1060) × 100 */
+    right: 68.33%;       /* (1025 / 1500) * 100 */
+    font-size: 1.3vw; /* ou mieux : via clamp() pour contrôle */
 }
