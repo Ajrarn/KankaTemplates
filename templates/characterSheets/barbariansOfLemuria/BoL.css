@@ -81,9 +81,17 @@
     color: black;
 }
 
+#bol-xp-label {
+    position: absolute;
+    bottom: 86%;   /* (880 / 1060) × 100 */
+    left: 77%;       /* (1025 / 1500) * 100 */
+    font-size: 2vw;
+    color: black;
+}
+
 #bol-attributes-label {
     position: absolute;
-    bottom: 74.5%;
+    bottom: 74%;
     left: 30%;
     font-size: 2.5vw;
     color: white;
@@ -136,7 +144,7 @@
 }
 #bol-weapons-label {
     position: absolute;
-    bottom: 74.5%;
+    bottom: 74%;
     left: 58%;
     font-size: 2.5vw;
     color: white;
@@ -201,4 +209,28 @@
 
 .arc-text.reverse span[data-index] {
     --index: calc(var(--char-count) - 1 - var(--index));
+}
+
+#bol-boons-label {
+    position: absolute;
+    bottom: 16%;
+    left: 30%;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#bol-flaws-label {
+    position: absolute;
+    bottom: 16%;
+    left: 70%;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#bol-equipment-label {
+    position: absolute;
+    bottom: 47.5%;
+    left: 65%;
+    font-size: 2.5vw;
+    color: white;
 }
