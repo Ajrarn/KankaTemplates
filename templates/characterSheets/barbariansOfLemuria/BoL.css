@@ -149,6 +149,14 @@
     color: white;
 }
 
+#bol-lifeblood-label {
+    position: absolute;
+    bottom: 23%;
+    left: 47.5%;
+    font-size: 1.5vw;
+    color: white;
+}
+
 /* --- TEXTE EN ARC --- */
 .arc-text {
     position: absolute;
@@ -170,7 +178,7 @@
     left: 50%;
     transform-origin: center;
     font-size: 1.5vw;
-    color: red;
+    color: white;
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
 }
