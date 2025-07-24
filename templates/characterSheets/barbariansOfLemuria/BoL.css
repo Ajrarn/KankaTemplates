@@ -1,8 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+English+SC&display=swap');
 
-.barbarian {
+.im-fell-english-sc-regular {
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cinzel-decorative-black {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -15,23 +33,164 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-#bol-name {
+#bol-name-label {
     position: absolute;
     bottom: 91.69%;   /* (972 / 1060) × 100 */
     right: 68.33%;       /* (1025 / 1500) * 100 */
-    font-size: 2.17vw; /* ou mieux : via clamp() pour contrôle */
+    font-size: 2.17vw;
+    color: black;
 }
 
-#bol-origin {
+#bol-name-value {
+    position: absolute;
+    bottom: 91.69%;   /* (972 / 1060) × 100 */
+    left: 35%;
+    font-size: 1.63vw;
+    color: black;
+}
+
+#bol-origin-label {
     position: absolute;
     bottom: 87.55%;   /* (928 / 1060) × 100 */
     right: 68.33%;       /* (1025 / 1500) * 100 */
-    font-size: 1.3vw; /* ou mieux : via clamp() pour contrôle */
+    font-size: 1.3vw;
+    color: black;
 }
 
-#bol-languages {
+#bol-origin-value {
+    position: absolute;
+    bottom: 87.55%;   /* (928 / 1060) × 100 */
+    left: 35%;
+    font-size: 0.97vw;
+    color: black;
+}
+
+#bol-languages-label {
     position: absolute;
     bottom: 83.02%;   /* (880 / 1060) × 100 */
     right: 68.33%;       /* (1025 / 1500) * 100 */
-    font-size: 1.3vw; /* ou mieux : via clamp() pour contrôle */
+    font-size: 1.3vw;
+    color: black;
+}
+
+#bol-languages-value {
+    position: absolute;
+    bottom: 83.02%;   /* (880 / 1060) × 100 */
+    left: 35%;
+    font-size: 0.97vw;
+    color: black;
+}
+
+#bol-attributes-label {
+    position: absolute;
+    bottom: 74.5%;
+    left: 30%;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#bol-careers-label {
+    position: absolute;
+    bottom: 52.5%;
+    left: 22%;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#bol-combat-abilities-label {
+    position: absolute;
+    bottom: 28%;
+    left: 2.5%;
+    font-size: 1.7vw;
+    color: white;
+    writing-mode: sideways-lr;
+}
+
+#bol-initiative-label {
+    position: absolute;
+    bottom: 48.5%;
+    left: 8%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-melee-label {
+    position: absolute;
+    bottom: 35.5%;
+    left: 8%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-ranged-label {
+    position: absolute;
+    bottom: 23%;
+    left: 8%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-defence-label {
+    position: absolute;
+    bottom: 11%;
+    left: 8%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-weapons-label {
+    position: absolute;
+    bottom: 74.5%;
+    left: 58%;
+    font-size: 2.5vw;
+    color: white;
+}
+#bol-damages-label {
+    position: absolute;
+    bottom: 74.5%;
+    left: 73%;
+    font-size: 1.7vw;
+    color: white;
+}
+
+/* --- TEXTE EN ARC --- */
+.arc-text {
+    position: absolute;
+    width: var(--arc-diameter, 30vw);
+    height: var(--arc-diameter, 30vw);
+    left: var(--arc-left);
+    top: var(--arc-top);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.arc-text span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    font-size: 1.5vw;
+    color: red;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+}
+
+.arc-text.outward span[data-index],
+.arc-text.outward.reverse span[data-index] {
+    --angle-step: calc(var(--arc-angle, 90deg) / (var(--char-count) - 1));
+    transform:
+            rotate(calc((var(--angle-step) * var(--index)) + var(--angle-start, 0deg)))
+            translateY(calc(-0.5 * var(--arc-diameter, 30vw)));
+}
+
+.arc-text.inward span[data-index],
+.arc-text.inward.reverse span[data-index] {
+    --angle-step: calc(var(--arc-angle, 90deg) / (var(--char-count) - 1));
+    transform:
+            rotate(calc((var(--angle-step) * var(--index)) + var(--angle-start, 0deg)))
+            translateY(calc(-0.5 * var(--arc-diameter, 30vw)));
+}
+
+.arc-text.reverse span[data-index] {
+    --index: calc(var(--char-count) - 1 - var(--index));
 }
