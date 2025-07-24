@@ -97,6 +97,77 @@
     color: white;
 }
 
+.bol-attr-bloc {
+    font-size:  1.8vw;
+    width: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content:  flex-start;
+    gap: 0;
+}
+
+.bol-attr-label {
+    font-size: 1.7vw;
+}
+
+.bol-attr-img {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8vw;
+    width: 8vw;
+}
+
+.bol-attr-value {
+    font-size: 2.2vw;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+#bol-attr-strength {
+    position: absolute;
+    bottom: 60.5%;
+    left: 9%;
+}
+
+#bol-attr-strength-img {
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeVigueur.svg');
+}
+
+#bol-attr-agility {
+    position: absolute;
+    bottom: 60.5%;
+    left: 21%;
+}
+
+#bol-attr-agility-img {
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAgilite.svg');
+}
+
+#bol-attr-mind {
+    position: absolute;
+    bottom: 60.5%;
+    left: 33%;
+}
+
+#bol-attr-mind-img {
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeEsprit.svg');
+}
+
+#bol-attr-aura {
+    position: absolute;
+    bottom: 60.5%;
+    left: 45%;
+}
+
+#bol-attr-aura-img {
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAura.svg');
+}
+
 #bol-careers-label {
     position: absolute;
     bottom: 52.5%;
