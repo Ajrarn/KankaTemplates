@@ -1,9 +1,103 @@
 <div class="bol-sheet">
-  <!-- Labels -->
+  <!-- Header -->
   <div id="bol-name-label" class="im-fell-english-sc-regular">@i18n("Name")</div>
   <div id="bol-name-value" class="cinzel-decorative-regular">{{ $_entity_name }}</div>
   <div id="bol-origin-label" class="im-fell-english-sc-regular">@i18n("Origin")</div>
-  <div id="bol-origin-value" class="cinzel-decorative-regular">Origin</div>
+  <div id="bol-origin-value" class="cinzel-decorative-regular">{{ $origin }}</div>
   <div id="bol-languages-label" class="im-fell-english-sc-regular">@i18n("Languages")</div>
-  <div id="bol-languages-value" class="cinzel-decorative-regular">Languages</div>
+  <div id="bol-languages-value" class="cinzel-decorative-regular">{{ $languages}}</div>
+
+  <div id="bol-xp-label" class="im-fell-english-sc-regular">XP</div>
+  <div id="bol-xp-value" class="cinzel-decorative-regular">{{ $xp }}</div>
+
+  <!-- Attributes -->
+  <div id="bol-attributes-label" class="im-fell-english-sc-regular">@i18n("Attributes")</div>
+  <div id="bol-attr-strength" class="bol-attr-bloc">
+    <div id="bol-attr-strength-img" class="bol-attr-img"></div>
+    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Strength")</div>
+    <div class="cinzel-decorative-regular bol-attr-value">{{ $strength }}</div>
+  </div>
+  <div id="bol-attr-agility" class="bol-attr-bloc">
+    <div id="bol-attr-agility-img" class="bol-attr-img"></div>
+    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Agility")</div>
+    <div class="cinzel-decorative-regular bol-attr-value">{{ $agility }}</div>
+  </div>
+  <div id="bol-attr-mind" class="bol-attr-bloc">
+    <div id="bol-attr-mind-img" class="bol-attr-img"></div>
+    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Mind")</div>
+    <div class="cinzel-decorative-regular bol-attr-value">{{ $mind }}</div>
+  </div>
+  <div id="bol-attr-appeal" class="bol-attr-bloc">
+    <div id="bol-attr-appeal-img" class="bol-attr-img"></div>
+    <div class="im-fell-english-sc-regular bol-attr-label">Appeal</div>
+    <div class="cinzel-decorative-regular bol-attr-value">{{ $appeal }}</div>
+  </div>
+
+  <!-- Careers -->
+  <div id="bol-careers-label" class="im-fell-english-sc-regular">@i18n("Careers")</div>
+  <div id="bol-career-1-label" class="cinzel-decorative-regular">{{ $career1Label }}</div>
+  <div id="bol-career-1-value" class="cinzel-decorative-regular">{{ $career1Value }}</div>
+  <div id="bol-career-2-label" class="cinzel-decorative-regular">{{ $career2Label }}</div>
+  <div id="bol-career-2-value" class="cinzel-decorative-regular">{{ $career2Value }}</div>
+  <div id="bol-career-3-label" class="cinzel-decorative-regular">{{ $career3Label }}</div>
+  <div id="bol-career-3-value" class="cinzel-decorative-regular">{{ $career3Value }}</div>
+  <div id="bol-career-4-label" class="cinzel-decorative-regular">{{ $career4Label }}</div>
+  <div id="bol-career-4-value" class="cinzel-decorative-regular">{{ $career4Value }}</div>
+  <div id="bol-career-5-label" class="cinzel-decorative-regular">{{ $career5Label }}</div>
+  <div id="bol-career-5-value" class="cinzel-decorative-regular">{{ $career5Value }}</div>
+
+  <!-- Combat section -->
+  <div id="bol-combat-abilities-label" class="im-fell-english-sc-regular">@i18n("Combat Abilities")</div>
+  <div id="bol-initiative-value" class="cinzel-decorative-regular">{{ $initiative }}</div>
+  <div id="bol-initiative-label" class="im-fell-english-sc-regular">@i18n("Initiative")</div>
+  <div id="bol-melee-value" class="cinzel-decorative-regular">{{ $melee }}</div>
+  <div id="bol-melee-label" class="im-fell-english-sc-regular">@i18n("Melee")</div>
+  <div id="bol-ranged-value" class="cinzel-decorative-regular">{{ $ranged }}</div>
+  <div id="bol-ranged-label" class="im-fell-english-sc-regular">@i18n("Ranged")</div>
+  <div id="bol-defence-value" class="cinzel-decorative-regular">{{ $defence }}</div>
+  <div id="bol-defence-label" class="im-fell-english-sc-regular">@i18n("Defence")</div>
+
+
+
+  <!-- Weapons section-->
+  <div id="bol-weapons-label" class="im-fell-english-sc-regular">@i18n("Weapons")</div>
+  <div id="bol-damages-label" class="im-fell-english-sc-regular">@i18n("Damages")</div>
+  <div id="bol-weapons-value" class="cinzel-decorative-regular">
+    {{ $weapons }}
+  </div>
+
+
+  <!-- Circle -->
+  <div id="bol-faith-label" class="im-fell-english-sc-regular arc-text">@i18n("fate")</div>
+  <div id="bol-faith-value" class="cinzel-decorative-regular">{{ $faithValue }}</div>
+  <div id="bol-faith-max-value" class="cinzel-decorative-regular">{{ $faithMaxValue }}</div>
+  <div id="bol-power-label" class="im-fell-english-sc-regular arc-text">@i18n("power")</div>
+  <div id="bol-power-value" class="cinzel-decorative-regular">{{ $powerValue }}</div>
+  <div id="bol-power-max-value" class="cinzel-decorative-regular">{{ $powerMaxValue }}</div>
+  <div id="bol-hero-label" class="im-fell-english-sc-regular arc-text">@i18n("hero")</div>
+  <div id="bol-hero-value" class="cinzel-decorative-regular">{{ $heroValue }}</div>
+  <div id="bol-hero-max-value" class="cinzel-decorative-regular">{{ $heroMaxValue }}</div>
+  <div id="bol-lifeblood-label" class="im-fell-english-sc-regular">@i18n("lifeblood")</div>
+  <div id="bol-lifeblood-value" class="cinzel-decorative-regular">{{ $lifebloodValue }}</div>
+  <div id="bol-lifeblood-max-value" class="cinzel-decorative-regular">{{ $lifebloodMaxValue }}</div>
+
+  <!-- Equipment -->
+  <div id="bol-equipment-label" class="im-fell-english-sc-regular">@i18n("Armour & Equipment")</div>
+  <div id="bol-equipment-value" class="cinzel-decorative-regular">
+    {{ $equipment }}
+  </div>
+
+  <!-- Boons -->
+  <div id="bol-boons-label" class="im-fell-english-sc-regular">@i18n("Boons")</div>
+  <div id="bol-boons-value" class="cinzel-decorative-regular">
+     {{ $boons }}
+  </div>
+
+  <!-- Flaws -->
+  <div id="bol-flaws-label" class="im-fell-english-sc-regular">@i18n("Flaws")</div>
+  <div id="bol-flaws-value" class="cinzel-decorative-regular">
+    {{ $flaws }}
+  </div>
+
+
 </div>

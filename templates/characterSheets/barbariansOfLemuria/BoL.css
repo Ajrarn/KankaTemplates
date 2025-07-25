@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=IM+Fell+English+SC&display=swap');
 
+
+#container-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+#grosse-marge {
+    min-width: 484px;
+    max-width: 484px;
+    background-color: red;
+}
+
+
 /*      fonts           */
 .im-fell-english-sc-regular {
     font-family: "IM Fell English SC", serif;
@@ -92,6 +105,14 @@
     color: black;
 }
 
+#bol-xp-value {
+    position: absolute;
+    bottom: 80%;   /* (880 / 1060) × 100 */
+    left: 77%;       /* (1025 / 1500) * 100 */
+    font-size: 2vw;
+    color: black;
+}
+
 /* Attributes */
 
 #bol-attributes-label {
@@ -163,14 +184,14 @@
     background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeEsprit.svg');
 }
 
-#bol-attr-aura {
+#bol-attr-appeal {
     position: absolute;
     bottom: 60.5%;
     left: 45%;
 }
 
-#bol-attr-aura-img {
-    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAura.svg');
+#bol-attr-appeal-img {
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAppeal.svg');
 }
 
 /* Careers */
