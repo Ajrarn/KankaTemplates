@@ -421,6 +421,63 @@
     --index: calc(var(--char-count) - 1 - var(--index));
 }
 
+#bol-faith-value {
+    position: absolute;
+    bottom: 31.5%;
+    left: 38.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-faith-max-value {
+    position: absolute;
+    bottom: 36%;
+    left: 42.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-power-value {
+    position: absolute;
+    bottom: 45.5%;
+    left: 38.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-power-max-value {
+    position: absolute;
+    bottom: 41.5%;
+    left: 42.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-hero-value {
+    position: absolute;
+    bottom: 45.5%;
+    left: 50%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-hero-max-value {
+    position: absolute;
+    bottom: 41.5%;
+    left: 46.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-lifeblood-value {
+    position: absolute;
+    bottom: 31.5%;
+    left: 50%;
+    font-size: 1.7vw;
+    color: black;
+}
+#bol-lifeblood-max-value {
+    position: absolute;
+    bottom: 36%;
+    left: 46.5%;
+    font-size: 1.7vw;
+    color: black;
+}
+
 /* boons */
 
 #bol-boons-label {
