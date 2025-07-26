@@ -45,7 +45,7 @@ function createArcTextFromContent(id, options = {}) {
 //Initialisation du document
 document.addEventListener("DOMContentLoaded", function () {
     createArcTextFromContent("bol-faith-label", {
-        "arc-diameter": "22.8vw",
+        "arc-diameter": "16.9vw",
         "angleStart": "180",
         "arc-left": "44.7%",
         "arc-top": "58.5%",
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     createArcTextFromContent("bol-power-label", {
-        "arc-diameter": "22.8vw",
+        "arc-diameter": "17.4vw",
         "angleStart": "270",
         "arc-left": "44.7%",
         "arc-top": "58.5%",
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     createArcTextFromContent("bol-hero-label", {
-        "arc-diameter": "22.8vw",
+        "arc-diameter": "17.4vw",
         "angleStart": "0",
         "arc-left": "44.7%",
         "arc-top": "58.5%",
