@@ -41,31 +41,58 @@ function createArcTextFromContent(id, options = {}) {
     });
 }
 
+function updateSheetVariables() {
+    const sheet = document.querySelector('.bol-sheet');
+    if (!sheet) return;
+
+    const sheetWidth = sheet.offsetWidth;
+    const viewportWidth = window.innerWidth;
+    const ratio = sheetWidth / viewportWidth;
+
+    // Met à jour les variables CSS
+    document.documentElement.style.setProperty('--sheet-width', sheetWidth + 'px');
+    document.documentElement.style.setProperty('--sheet-ratio', ratio);
+
+    // Met à jour les variables de taille de police en fonction du ratio
+    document.documentElement.style.setProperty('--font-size-name', (2.4 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-origin-languages-combat-attributes-label', (1.4 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-xp-sections-labels', (2.5 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-origin-languages-values', (1.6 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-default-values', (2 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-attributes-labels', (2 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-attribute-values', (2.7 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-sections-value', (1.5 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--font-size-damages-arc-label', (1.5 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--attribute-img-width-heigth', (9 * ratio) + 'vw');
+    document.documentElement.style.setProperty('--arc-diameter', (23 * ratio) + 'vw');
+}
+
+// Mettre à jour au chargement et au redimensionnement
+window.addEventListener('DOMContentLoaded', updateSheetVariables);
+window.addEventListener('resize', updateSheetVariables);
+
 
 //Initialisation du document
 document.addEventListener("DOMContentLoaded", function () {
+
+    const sheetWidth = document.querySelector('.bol-sheet').offsetWidth;
+    document.documentElement.style.setProperty('--sheet-width', sheetWidth + 'px');
+
     createArcTextFromContent("bol-faith-label", {
-        "arc-diameter": "16.9vw",
         "angleStart": "180",
-        "arc-left": "44.7%",
-        "arc-top": "58.5%",
         "facing": "outward",
         "reverse": true
     });
 
     createArcTextFromContent("bol-power-label", {
-        "arc-diameter": "17.4vw",
         "angleStart": "270",
-        "arc-left": "44.7%",
-        "arc-top": "58.5%",
         "facing": "inward"
     });
 
     createArcTextFromContent("bol-hero-label", {
-        "arc-diameter": "17.4vw",
         "angleStart": "0",
-        "arc-left": "44.7%",
-        "arc-top": "58.5%",
         "facing": "inward"
     });
 });
+
+
