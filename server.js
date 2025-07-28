@@ -19,6 +19,11 @@ const escapeHtml = (unsafe) =>
 function compileTemplate(content) {
     let tpl = content
 
+    // Variables brutes {!! var !!}
+    tpl = tpl.replace(/\{\!\!\s*([a-zA-Z0-9_]+)\s*\!\!\}/g, (_, varName) => {
+        return `\$\{options.attributes["${varName}"] ?? ""\}`
+    })
+
     // Variables sécurisées {{ $_var }}
     tpl = tpl.replace(/\{\{\s*\$_([a-zA-Z0-9_]+)\s*\}\}/g, (_, varName) => {
         return `\$\{escapeHtml(options.attributes["${varName}"] ?? "")\}`
@@ -34,9 +39,9 @@ function compileTemplate(content) {
         return `\$\{(options.i18n && options.i18n["${txt}"]) || "${txt}"\}`
     })
 
-    // @liveAttribute('field')
+    // @liveAttribute('field') – version non échappée pour supporter les <br />
     tpl = tpl.replace(/@liveAttribute\('([^']+)'\)/g, (_, field) => {
-        return `\$\{escapeHtml(options.attributes["${field}"] ?? "")\}`
+        return `\$\{options.attributes["${field}"] ?? ""\}`
     })
 
     // Conditions
