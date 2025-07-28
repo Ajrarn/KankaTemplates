@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nothing+You+Could+Do&display=swap');
 
 :root {
-    --sidebar-width: 200px;
+    --sidebar-width: 484px;
     --sheet-width: calc(100vw - var(--sidebar-width));
     --font-size-name: 2.4vw;
     --font-size-origin-languages-combat-attributes-label: 1.4vw;
@@ -26,7 +26,7 @@
 #grosse-marge {
     min-width: var(--sidebar-width);
     max-width: var(--sidebar-width);
-    background-color: red;
+    background-color: #8ff6fa;
 }
 
 
@@ -48,7 +48,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 1500 / 1060;
-    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/fond.svg');
+    background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/fond.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -161,28 +161,28 @@
 #bol-attr-strength {
     left: 9%;
     #bol-attr-strength-img {
-        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeVigueur.svg');
+        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/globeVigueur.svg');
     }
 }
 
 #bol-attr-agility {
     left: 21%;
     #bol-attr-agility-img {
-        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAgilite.svg');
+        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/globeAgilite.svg');
     }
 }
 
 #bol-attr-mind {
     left: 33%;
     #bol-attr-mind-img {
-        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeEsprit.svg');
+        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/globeEsprit.svg');
     }
 }
 
 #bol-attr-appeal {
     left: 45%;
     #bol-attr-appeal-img {
-        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/characterSheets/barbariansOfLemuria/globeAura.svg');
+        background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/globeAura.svg');
     }
 }
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nothing+You+Could+Do&display=swap');
 
 :root {
-    --sidebar-width: 200px;
+    --sidebar-width: 484px;
     --sheet-width: calc(100vw - var(--sidebar-width));
     --font-size-name: 2.4vw;
     --font-size-origin-languages-combat-attributes-label: 1.4vw;

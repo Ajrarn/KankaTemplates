@@ -6,7 +6,10 @@
     <title>Title</title>
 </head>
 <body>
-{{ $template }}
+<div id="container-principal">
+    <div id="grosse-marge"></div>
+    {{ $template }}
+</div>
 <script src="{{ $js_url }}"></script>
 </body>
 </html>
