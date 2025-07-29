@@ -1,95 +1,95 @@
 <div class="bol-sheet">
   <!-- Header -->
-  <div id="bol-name-label" class="im-fell-english-sc-regular">@i18n("Name")</div>
-  <div id="bol-name-value" class="nothing-you-could-do-regular">{{ $_entity_name }}</div>
-  <div id="bol-origin-label" class="im-fell-english-sc-regular">@i18n("Origin")</div>
-  <div id="bol-origin-value" class="nothing-you-could-do-regular">@liveAttribute('origin')</div>
-  <div id="bol-languages-label" class="im-fell-english-sc-regular">@i18n("Languages")</div>
-  <div id="bol-languages-value" class="nothing-you-could-do-regular">@liveAttribute('languages')</div>
+  <div id="bol-name-label" class="titles">@i18n("Name")</div>
+  <div id="bol-name-value" class="values">{{ $_entity_name }}</div>
+  <div id="bol-origin-label" class="titles">@i18n("Origin")</div>
+  <div id="bol-origin-value" class="values">@liveAttribute('origin')</div>
+  <div id="bol-languages-label" class="titles">@i18n("Languages")</div>
+  <div id="bol-languages-value" class="values">@liveAttribute('languages')</div>
 
-  <div id="bol-xp-label" class="im-fell-english-sc-regular">XP</div>
-  <div id="bol-xp-value" class="nothing-you-could-do-regular">@liveAttribute('xp')</div>
+  <div id="bol-xp-label" class="titles">XP</div>
+  <div id="bol-xp-value" class="values">@liveAttribute('xp')</div>
 
   <!-- Attributes -->
-  <div id="bol-attributes-label" class="im-fell-english-sc-regular">@i18n("Attributes")</div>
+  <div id="bol-attributes-label" class="titles">@i18n("Attributes")</div>
   <div id="bol-attr-strength">
     <div id="bol-attr-strength-img" class="bol-attr-img"></div>
-    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Strength")</div>
-    <div class="nothing-you-could-do-regular bol-attr-value">@liveAttribute('strength')</div>
+    <div class="titles bol-attr-label">@i18n("Strength")</div>
+    <div class="values bol-attr-value">@liveAttribute('strength')</div>
   </div>
   <div id="bol-attr-agility">
     <div id="bol-attr-agility-img" class="bol-attr-img"></div>
-    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Agility")</div>
-    <div class="nothing-you-could-do-regular bol-attr-value">@liveAttribute('agility')</div>
+    <div class="titles bol-attr-label">@i18n("Agility")</div>
+    <div class="values bol-attr-value">@liveAttribute('agility')</div>
   </div>
   <div id="bol-attr-mind">
     <div id="bol-attr-mind-img" class="bol-attr-img"></div>
-    <div class="im-fell-english-sc-regular bol-attr-label">@i18n("Mind")</div>
-    <div class="nothing-you-could-do-regular bol-attr-value">@liveAttribute('mind')</div>
+    <div class="titles bol-attr-label">@i18n("Mind")</div>
+    <div class="values bol-attr-value">@liveAttribute('mind')</div>
   </div>
   <div id="bol-attr-appeal">
     <div id="bol-attr-appeal-img" class="bol-attr-img"></div>
-    <div class="im-fell-english-sc-regular bol-attr-label">Appeal</div>
-    <div class="nothing-you-could-do-regular bol-attr-value">@liveAttribute('appeal')</div>
+    <div class="titles bol-attr-label">Appeal</div>
+    <div class="values bol-attr-value">@liveAttribute('appeal')</div>
   </div>
 
   <!-- Careers -->
-  <div id="bol-careers-label" class="im-fell-english-sc-regular">@i18n("Careers")</div>
-  <div id="bol-career-1-label" class="nothing-you-could-do-regular">@liveAttribute('career1Label')</div>
-  <div id="bol-career-1-value" class="nothing-you-could-do-regular">@liveAttribute('career1Value')</div>
-  <div id="bol-career-2-label" class="nothing-you-could-do-regular">@liveAttribute('career2Label')</div>
-  <div id="bol-career-2-value" class="nothing-you-could-do-regular">@liveAttribute('career2Value')</div>
-  <div id="bol-career-3-label" class="nothing-you-could-do-regular">@liveAttribute('career3Label')</div>
-  <div id="bol-career-3-value" class="nothing-you-could-do-regular">@liveAttribute('career3Value')</div>
-  <div id="bol-career-4-label" class="nothing-you-could-do-regular">@liveAttribute('career4Label')</div>
-  <div id="bol-career-4-value" class="nothing-you-could-do-regular">@liveAttribute('career4Value')</div>
-  <div id="bol-career-5-label" class="nothing-you-could-do-regular">@liveAttribute('career5Label')</div>
-  <div id="bol-career-5-value" class="nothing-you-could-do-regular">@liveAttribute('career5Value')</div>
+  <div id="bol-careers-label" class="titles">@i18n("Careers")</div>
+  <div id="bol-career-1-label" class="values">@liveAttribute('career1Label')</div>
+  <div id="bol-career-1-value" class="values">@liveAttribute('career1Value')</div>
+  <div id="bol-career-2-label" class="values">@liveAttribute('career2Label')</div>
+  <div id="bol-career-2-value" class="values">@liveAttribute('career2Value')</div>
+  <div id="bol-career-3-label" class="values">@liveAttribute('career3Label')</div>
+  <div id="bol-career-3-value" class="values">@liveAttribute('career3Value')</div>
+  <div id="bol-career-4-label" class="values">@liveAttribute('career4Label')</div>
+  <div id="bol-career-4-value" class="values">@liveAttribute('career4Value')</div>
+  <div id="bol-career-5-label" class="values">@liveAttribute('career5Label')</div>
+  <div id="bol-career-5-value" class="values">@liveAttribute('career5Value')</div>
 
   <!-- Combat section -->
-  <div id="bol-combat-abilities-label" class="im-fell-english-sc-regular">@i18n("Combat Abilities")</div>
-  <div id="bol-initiative-value" class="nothing-you-could-do-regular">@liveAttribute('initiative')</div>
-  <div id="bol-initiative-label" class="im-fell-english-sc-regular">@i18n("Initiative")</div>
-  <div id="bol-melee-value" class="nothing-you-could-do-regular">@liveAttribute('melee')</div>
-  <div id="bol-melee-label" class="im-fell-english-sc-regular">@i18n("Melee")</div>
-  <div id="bol-ranged-value" class="nothing-you-could-do-regular">@liveAttribute('ranged')</div>
-  <div id="bol-ranged-label" class="im-fell-english-sc-regular">@i18n("Ranged")</div>
-  <div id="bol-defence-value" class="nothing-you-could-do-regular">@liveAttribute('defence')</div>
-  <div id="bol-defence-label" class="im-fell-english-sc-regular">@i18n("Defence")</div>
+  <div id="bol-combat-abilities-label" class="titles">@i18n("Combat Abilities")</div>
+  <div id="bol-initiative-value" class="values">@liveAttribute('initiative')</div>
+  <div id="bol-initiative-label" class="titles">@i18n("Initiative")</div>
+  <div id="bol-melee-value" class="values">@liveAttribute('melee')</div>
+  <div id="bol-melee-label" class="titles">@i18n("Melee")</div>
+  <div id="bol-ranged-value" class="values">@liveAttribute('ranged')</div>
+  <div id="bol-ranged-label" class="titles">@i18n("Ranged")</div>
+  <div id="bol-defence-value" class="values">@liveAttribute('defence')</div>
+  <div id="bol-defence-label" class="titles">@i18n("Defence")</div>
 
 
 
   <!-- Weapons section-->
-  <div id="bol-weapons-label" class="im-fell-english-sc-regular">@i18n("Weapons")</div>
-  <div id="bol-damages-label" class="im-fell-english-sc-regular">@i18n("Damages")</div>
-  <div id="bol-weapons-value" class="nothing-you-could-do-regular">@liveAttribute('weapons')</div>
+  <div id="bol-weapons-label" class="titles">@i18n("Weapons")</div>
+  <div id="bol-damages-label" class="titles">@i18n("Damages")</div>
+  <div id="bol-weapons-value" class="values">@liveAttribute('weapons')</div>
 
 
   <!-- Circle -->
-  <div id="bol-faith-label" class="im-fell-english-sc-regular arc-text">@i18n("fate")</div>
-  <div id="bol-faith-value" class="nothing-you-could-do-regular">@liveAttribute('faithValue')</div>
-  <div id="bol-faith-max-value" class="nothing-you-could-do-regular">@liveAttribute('faithMaxValue')</div>
-  <div id="bol-power-label" class="im-fell-english-sc-regular arc-text">@i18n("arcane")</div>
-  <div id="bol-power-value" class="nothing-you-could-do-regular">@liveAttribute('powerValue')</div>
-  <div id="bol-power-max-value" class="nothing-you-could-do-regular">@liveAttribute('powerMaxValue')</div>
-  <div id="bol-hero-label" class="im-fell-english-sc-regular arc-text">@i18n("hero")</div>
-  <div id="bol-hero-value" class="nothing-you-could-do-regular">@liveAttribute('heroValue')</div>
-  <div id="bol-hero-max-value" class="nothing-you-could-do-regular">@liveAttribute('heroMaxValue')</div>
-  <div id="bol-lifeblood-label" class="im-fell-english-sc-regular">@i18n("lifeblood")</div>
-  <div id="bol-lifeblood-value" class="nothing-you-could-do-regular">@liveAttribute('lifebloodValue')</div>
-  <div id="bol-lifeblood-max-value" class="nothing-you-could-do-regular">@liveAttribute('lifebloodMaxValue')</div>
+  <div id="bol-faith-label" class="titles arc-text">@i18n("fate")</div>
+  <div id="bol-faith-value" class="values">@liveAttribute('faithValue')</div>
+  <div id="bol-faith-max-value" class="values">@liveAttribute('faithMaxValue')</div>
+  <div id="bol-power-label" class="titles arc-text">@i18n("arcane")</div>
+  <div id="bol-power-value" class="values">@liveAttribute('powerValue')</div>
+  <div id="bol-power-max-value" class="values">@liveAttribute('powerMaxValue')</div>
+  <div id="bol-hero-label" class="titles arc-text">@i18n("hero")</div>
+  <div id="bol-hero-value" class="values">@liveAttribute('heroValue')</div>
+  <div id="bol-hero-max-value" class="values">@liveAttribute('heroMaxValue')</div>
+  <div id="bol-lifeblood-label" class="titles">@i18n("lifeblood")</div>
+  <div id="bol-lifeblood-value" class="values">@liveAttribute('lifebloodValue')</div>
+  <div id="bol-lifeblood-max-value" class="values">@liveAttribute('lifebloodMaxValue')</div>
 
   <!-- Equipment -->
-  <div id="bol-equipment-label" class="im-fell-english-sc-regular">@i18n("Equipment")</div>
-  <div id="bol-equipment-value" class="nothing-you-could-do-regular">@liveAttribute('equipment')</div>
+  <div id="bol-equipment-label" class="titles">@i18n("Equipment")</div>
+  <div id="bol-equipment-value" class="values">@liveAttribute('equipment')</div>
 
   <!-- Boons -->
-  <div id="bol-boons-label" class="im-fell-english-sc-regular">@i18n("Boons")</div>
-  <div id="bol-boons-value" class="nothing-you-could-do-regular">@liveAttribute('boons')</div>
+  <div id="bol-boons-label" class="titles">@i18n("Boons")</div>
+  <div id="bol-boons-value" class="values">@liveAttribute('boons')</div>
 
   <!-- Flaws -->
-  <div id="bol-flaws-label" class="im-fell-english-sc-regular">@i18n("Flaws")</div>
-  <div id="bol-flaws-value" class="nothing-you-could-do-regular">@liveAttribute('flaws')</div>
+  <div id="bol-flaws-label" class="titles">@i18n("Flaws")</div>
+  <div id="bol-flaws-value" class="values">@liveAttribute('flaws')</div>
 
 
 </div>

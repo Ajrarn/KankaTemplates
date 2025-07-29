@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Nothing+You+Could+Do&display=swap');
 
 :root {
-    --sidebar-width: 484px;
-    --sheet-width: calc(100vw - var(--sidebar-width));
+    --sheet-width: 100%;
     --font-size-name: 2.4vw;
     --font-size-origin-languages-combat-attributes-label: 1.4vw;
     --font-size-xp-sections-labels: 2vw;
@@ -14,31 +13,22 @@
     --font-size-damages-arc-label: 1.5vw;
     --attribute-img-width-heigth: 9vw;
     --arc-diameter: 20vw;
+    --arc-angle: 90deg;
+    --angle-start: 0deg;
+    --char-count: 1;
     --centre-circle-left: 44.75%;
     --centre-circle-top: 58.45%;
 }
 
-#container-principal {
-    display: flex;
-    flex-direction: row;
-}
-
-#grosse-marge {
-    min-width: var(--sidebar-width);
-    max-width: var(--sidebar-width);
-    background-color: #8ff6fa;
-}
-
-
 /*      fonts           */
-.im-fell-english-sc-regular {
+.titles {
     font-family: "IM Fell English SC", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 
-.nothing-you-could-do-regular {
+.values {
     font-family: "Nothing You Could Do", cursive;
     font-weight: 400;
     font-style: normal;

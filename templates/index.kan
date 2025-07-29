@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ $css_url }}">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="{{ $css_url }}"/>
     <title>Title</title>
 </head>
 <body>
-<div id="container-principal">
-    <div id="grosse-marge"></div>
+<div style="display:flex;flex-direction: row;">
+    <div style="min-width:484px;max-width:484px;background-color: #8ff6fa;">Marge Kanka</div>
     {{ $template }}
 </div>
 <script src="{{ $js_url }}"></script>
