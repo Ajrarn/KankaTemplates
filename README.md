@@ -60,3 +60,11 @@ In my own server everything was fine, but on kanka, it was not. Thanks to javasc
 So, I have decided to render the component in a page with a big panel on the left (484px).
 That's in the _index.kan_ template. You will find the javascript and css import in this file.
 It's in this file that you can play with the size of the left panel
+
+## Images
+We can't put images to render in the template in Kanka, so like I have seen in this repository https://github.com/Dschaykib/kankaTemplate, I have linked the images to the files in this repository.
+For example : 
+```css
+background-image: url('https://raw.githubusercontent.com/Ajrarn/KankaTemplates/main/templates/BoL/fond.svg');
+```
+So don't forget to push your images in the github repository before using this tip.
