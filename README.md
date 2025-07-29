@@ -47,5 +47,16 @@ this file is like this :
 At this point, I just want to emulate the translation, so there is only one translation.
 
 in the attributes part, you can see an attribute _entity_name_ who is a reference to _$\_entity\_name_ that Kanka provide.
-The next one _origin_ is a custom attribute, the only thing to say is that in this file, you don't need to start your attribute by \_ if the attribute in the template (the _kan_ file) does. 
+The next one _origin_ is a custom attribute,.
+The only thing to say is that you don't need to start your attribute by \_ in the attributes in the _template.json_ even if the attribute in the _template.kan_ file does. 
 And finally, to simulate multiline fields you only need to add _\<br \/\>_ between your 'lines' as you can see in the last attribute.
+
+## Main page
+I had a problem to design a character sheet based on a unique background image.
+On the kanka app website there is some useful tools and menus, on the left (for a width of 484px).
+I used ratios (10% of width or height) of the component to put everything in place, but for the size of the fonts I used a ratio of the viewport (vw).
+In my own server everything was fine, but on kanka, it was not. Thanks to javascript, I solved this too.
+
+So, I have decided to render the component in a page with a big panel on the left (484px).
+That's in the _index.kan_ template. You will find the javascript and css import in this file.
+It's in this file that you can play with the size of the left panel
